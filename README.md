@@ -96,7 +96,7 @@ sudo ufw enable
 ```
 sudo mysql_secure_installation
 ```
-then basially yes for every question.
+then basically yes for every question.
 
 
 ### Configuration file for nginx:
