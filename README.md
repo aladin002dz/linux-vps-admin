@@ -2,7 +2,7 @@
 **man** : get commands manual.
 ### cd:
 ```
->**`cd / `**`: go to root.`  
+<b>cd / </b> go to root.  
 >**`cd /usr/ `**`: got to user folder.`  
 >**`cd - `**`: goto previous folder.`  
 >**`cd .. `**`: goto parent folder.`  
