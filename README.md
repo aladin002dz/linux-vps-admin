@@ -1,11 +1,11 @@
 ### man
 **man** : get commands manual.
 ### cd:
-```
-**cd / **: go to root.
-**cd /usr/ **: got to user folder.
-**cd - **: goto previous folder.
-**cd .. **: goto parent folder.
+```c
+cd /      //go to root.
+cd /usr/  //got to user folder.
+cd -      //goto previous folder.
+cd ..     //goto parent folder.
 ```
 
 ### ls:
