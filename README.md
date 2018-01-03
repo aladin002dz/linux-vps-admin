@@ -104,3 +104,19 @@ then basically yes for every question.
 
 ### Websites Folder:
 /var/www/
+
+### Manage File and Folder Permissions 
+
+Who are we changing the permission for? [ugoa] - user (or owner), group, others, all
+Are we granting or revoking the permission - indicated with either a plus ( + ) or minus ( - )
+Which permission are we setting? - read ( r ), write ( w ) or execute ( x )
+
+```
+chmod [permissions] [path]
+```
+
+Using Binary References to Set permissions: The first number represents the Owner permission; the second represents the Group permissions; and the last number represents the permissions for all other users. The numbers are a binary representation of the rwx string.
+
+```
+chmod 740 file1
+```
