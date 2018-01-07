@@ -1,3 +1,8 @@
+# Useful tools:
+SSH Client: [link](http://www.putty.org/)
+Filezilla: [link](https://filezilla-project.org/download.php?type=client)
+
+# Basic Linux Commands:
 ### man
 man : get commands manual.
 ### cd:
