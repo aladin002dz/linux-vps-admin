@@ -84,6 +84,23 @@ sudo adduser user_test sudo
 ```
 sudo chown -R www-data permissions/ : assigning right over permissions folder for user www-data.
 ```  
+
+### Manage File and Folder Permissions 
+
+Who are we changing the permission for? [ugoa] - user (or owner), group, others, all
+Are we granting or revoking the permission - indicated with either a plus ( + ) or minus ( - )
+Which permission are we setting? - read ( r ), write ( w ) or execute ( x )
+
+```
+chmod [permissions] [path]
+```
+
+Using Binary References to Set permissions: The first number represents the Owner permission; the second represents the Group permissions; and the last number represents the permissions for all other users. The numbers are a binary representation of the rwx string.
+
+```
+chmod 740 file1
+```
+
 ### Managing firewall:
 ```
 sudo ufw status : check firewall status.
@@ -103,6 +120,13 @@ sudo mysql_secure_installation
 ```  
 then basically yes for every question.
 
+### Configuration file for nginx:
+/etc/nginx/nginx.conf
+
+### Websites Folder:
+/var/www/
+
 # Install and test SSL:
 Steps to Install SSL: [link](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)  
 Link to test SSL level of security: [link](https://www.ssllabs.com/ssltest/)
+
