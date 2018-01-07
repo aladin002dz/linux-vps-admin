@@ -105,4 +105,4 @@ then basically yes for every question.
 
 # Install and test SSL:
 Steps to Install SSL: [link](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)  
-Link to test SSL level of securiy: [link](https://www.ssllabs.com/ssltest/)
+Link to test SSL level of security: [link](https://www.ssllabs.com/ssltest/)
