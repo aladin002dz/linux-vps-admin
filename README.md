@@ -97,7 +97,7 @@ sudo ufw allow ssh
 sudo ufw enable
 ```
 
-### Secure mysql database:
+# Secure mysql database:
 ```
 sudo mysql_secure_installation
 ```
