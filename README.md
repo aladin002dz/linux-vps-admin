@@ -75,18 +75,15 @@ adduser test
 ```
 deluser test
 rm -r /home/test
-```
-
+```  
 ### Add admin rights to user:
 ```
 sudo adduser user_test sudo
-```
-
+```  
 ### Assigning permissions for user over a folder:
 ```
 sudo chown -R www-data permissions/ : assigning right over permissions folder for user www-data.
-```
-
+```  
 ### Managing firewall:
 ```
 sudo ufw status : check firewall status.
@@ -95,20 +92,16 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow ssh
 sudo ufw enable
-```
-
+```  
+### Configuration file for nginx:
+/etc/nginx/nginx.conf  
+### Websites Folder:
+/var/www/  
 # Secure mysql database:
 ```
 sudo mysql_secure_installation
-```
+```  
 then basically yes for every question.
-
-
-### Configuration file for nginx:
-/etc/nginx/nginx.conf
-
-### Websites Folder:
-/var/www/
 
 # Install and test SSL:
 Steps to Install SSL: [link](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)  
