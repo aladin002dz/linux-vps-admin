@@ -53,6 +53,7 @@ reboot
 
 ### Managing services:
 ```
+sudo service docker status # check status of service docker
 service nginx stop    # stop service nginx.
 service nginx start   # start service nginx.
 service nginx restart # restart service nginx.
