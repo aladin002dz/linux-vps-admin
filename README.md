@@ -41,6 +41,7 @@ mkdir test         # make folder test.
 cp -r test/ test2/ # copy folder test and its files.
 mv test/ test2/
 rm -r test         # remove folder.
+rmdir test         # remove empty folder.
 ```
 
 ### Managing package:
