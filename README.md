@@ -42,6 +42,7 @@ cp -r test/ test2/ # copy folder test and its files.
 mv test/ test2/
 rm -r test         # remove folder.
 rmdir test         # remove empty folder.
+rm -r test         # add confirmation to remove folder.
 ```
 
 ### Managing package:
