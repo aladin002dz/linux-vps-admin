@@ -7,13 +7,14 @@ Filezilla: [link](https://filezilla-project.org/download.php?type=client)
 ### man
 ```
 man # get commands manual.  
-```
-### pwd
+```  
+
+### pwd  
 ```
 pwd # path of the current directory.  
 ```
 
-### cd:
+### cd:  
 ```
 cd /      # go to root.  
 cd /usr/  # got to user folder.  
