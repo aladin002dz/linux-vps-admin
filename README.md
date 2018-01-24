@@ -8,6 +8,11 @@ Filezilla: [link](https://filezilla-project.org/download.php?type=client)
 ```
 man # get commands manual.  
 ```
+### pwd
+```
+pwd # path of the current directory.  
+```
+
 ### cd:
 ```
 cd /      # go to root.  
