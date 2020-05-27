@@ -14,8 +14,13 @@
     ```
     then basically yes for every question.
 1. Configuring nginx
-    * Configuration /etc/nginx
-    * Website Files: /var/www
+    * Check Configuration here `/etc/nginx`
+    * Create a folder for your website here `/var/www`
+    * Copy the default file here `/etc/nginx/sites-available`, and set the server configuration
+    * link the file in `/etc/nginx/sites-available`:
+    ```
+    sudo ln -s /etc/nginx/sites-available/yourwebsite /etc/nginx/enabled/yourwebsite
+    ``` 
 ========= other steps in progress ==============
   
 # Useful tools:
