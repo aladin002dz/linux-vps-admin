@@ -9,10 +9,10 @@
     reboot #restart server
     ```
 1. Secure mysql database:
-```
-sudo mysql_secure_installation
-```
-  then basically yes for every question.
+    ```
+    sudo mysql_secure_installation
+    ```
+    then basically yes for every question.
 1. Configuring nginx
   * Configuration /etc/nginx
   * Website Files: /var/www
