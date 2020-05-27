@@ -14,8 +14,8 @@
     ```
     then basically yes for every question.
 1. Configuring nginx
-  * Configuration /etc/nginx
-  * Website Files: /var/www
+    * Configuration /etc/nginx
+    * Website Files: /var/www
   
 # Useful tools:
 SSH Client: [link](http://www.putty.org/)  
