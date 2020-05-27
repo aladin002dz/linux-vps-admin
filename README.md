@@ -1,20 +1,18 @@
-# Steps
+# Example Of installing a VPS with LEMP stack on [DigitlOcean](https://www.digitalocean.com/)
 1. Using DigitalOcean, Choose the LEMP image.
 1. Link the domain name to the VPS IP ADDRESS.
-1. Connect to the Server with SSG, on windows: [putty](http://www.putty.org/) / on mcOS: ssh command.
+1. Connect to the Server with SSH, on windows: [putty](http://www.putty.org/) / on mcOS: ssh command.
 1. Update package and reboot
     ```
     apt-get update
     apt-get upgrade
     reboot #restart server
     ```
-  
 1. Secure mysql database:
 ```
 sudo mysql_secure_installation
 ```  
   then basically yes for every question.  
-  
 1. Configuring nginx
   
 # Useful tools:
