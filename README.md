@@ -19,7 +19,15 @@
     * Copy the default file here `/etc/nginx/sites-available`, and set the server configuration
     * link the file in `/etc/nginx/sites-available`:
     ```
-    sudo ln -s /etc/nginx/sites-available/yourwebsite /etc/nginx/sites-enabled/yourwebsite
+    sudo ln -s /etc/nginx/sites-available/aladinstudio /etc/nginx/sites-enabled/aladinstudio
+    ``` 
+    * Check for errors:
+    ```
+    sudo nginx -t
+    ``` 
+    * Reload configuration:
+    ```
+    sudo service nginx reload
     ``` 
 ========= other steps in progress ==============
   
