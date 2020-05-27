@@ -29,6 +29,7 @@
     ```
     sudo service nginx reload
     ``` 
+    * By now, the website is live: [aladinstuid.com](http://aladinstudio.com/)
 ========= other steps in progress ==============
   
 # Useful tools:
