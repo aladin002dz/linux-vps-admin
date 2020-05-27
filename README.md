@@ -19,7 +19,7 @@
     * Copy the default file here `/etc/nginx/sites-available`, and set the server configuration
     * link the file in `/etc/nginx/sites-available`:
     ```
-    sudo ln -s /etc/nginx/sites-available/yourwebsite /etc/nginx/enabled/yourwebsite
+    sudo ln -s /etc/nginx/sites-available/yourwebsite /etc/nginx/sites-enabled/yourwebsite
     ``` 
 ========= other steps in progress ==============
   
