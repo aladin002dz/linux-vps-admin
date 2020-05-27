@@ -1,3 +1,11 @@
+# Steps
+1. update package and reboot
+    ```
+    apt-get update
+    apt-get upgrade
+    reboot
+    ```
+
 # Useful tools:
 SSH Client: [link](http://www.putty.org/)  
 Filezilla: [link](https://filezilla-project.org/download.php?type=client)
@@ -116,11 +124,15 @@ chmod 740 file1
 ### Managing firewall:
 ```
 sudo ufw status                  # check firewall status.
+sudo apt-get install ufw         #if not installed
+sudo ufw enable                  #activate the firewall
 sudo ufw disable
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
+sudo ufw default deny incoming   # deny incoming connections
+sudo ufw default allow outgoing  # deny outgoing connections
 sudo ufw allow ssh
-sudo ufw enable
+sudo ufw allow www               #allow port 80 (http)
+sudo ufw allow 443/tcp           #allow manually port 443 (https)
+ufw delete allow 80/tcp          #deny access with http
 ```  
 ### Configuration file for nginx:
 /etc/nginx/nginx.conf  
@@ -141,4 +153,5 @@ then basically yes for every question.
 # Install and test SSL:
 Steps to Install SSL: [link](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)  
 Link to test SSL level of security: [link](https://www.ssllabs.com/ssltest/)
+
 
