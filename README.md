@@ -3,9 +3,14 @@
     ```
     apt-get update
     apt-get upgrade
-    reboot
+    reboot #restart server
     ```
-
+1. Secure mysql database:
+```
+sudo mysql_secure_installation
+```  
+then basically yes for every question.
+  
 # Useful tools:
 SSH Client: [link](http://www.putty.org/)  
 Filezilla: [link](https://filezilla-project.org/download.php?type=client)
@@ -132,7 +137,7 @@ sudo ufw default allow outgoing  # deny outgoing connections
 sudo ufw allow ssh
 sudo ufw allow www               #allow port 80 (http)
 sudo ufw allow 443/tcp           #allow manually port 443 (https)
-ufw delete allow 80/tcp          #deny access with http
+sudo ufw delete allow 80/tcp          #deny access with http
 ```  
 ### Configuration file for nginx:
 /etc/nginx/nginx.conf  
