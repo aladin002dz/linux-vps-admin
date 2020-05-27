@@ -16,6 +16,7 @@
 1. Configuring nginx
     * Configuration /etc/nginx
     * Website Files: /var/www
+========= other steps in progress ==============
   
 # Useful tools:
 SSH Client: [link](http://www.putty.org/)  
