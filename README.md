@@ -32,6 +32,19 @@ these notes are from the udemy course [secure vps](https://www.udemy.com/course/
     ``` 
     * By now, the website is live: [aladinstuid.com](http://aladinstudio.com/)
     * To remove server details being displayed in browsers, In `/etc/nginx/nginx.conf` uncomment the line `# server_tokens off;` 
+    * Avoiding XSS attacks, add the flowing line in In `/etc/nginx/nginx.conf`, after the line `gzip on;`  
+    ```
+	# avoiding xss attacks
+	add_header X-Content-Type-Options "nosniff" always;
+	add_header X-Frame-Options "SAMEORIGIN" always;
+	add_header X-XSS-Protection "1; mode=block" always;
+    ``` 
+    then check for error and reload configuratio
+    ```
+    sudo nginx -t
+    sudo service nginx reload
+    ``` 
+
 ========= other steps in progress ==============
   
 # Useful tools:
