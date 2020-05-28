@@ -39,12 +39,21 @@ these notes are from the udemy course [secure vps](https://www.udemy.com/course/
 	add_header X-Frame-Options "SAMEORIGIN" always;
 	add_header X-XSS-Protection "1; mode=block" always;
     ``` 
-    then check for error and reload configuratio
+    then check for errors and reload configuration
     ```
     sudo nginx -t
     sudo service nginx reload
+    ```
+    * Mitigating Dos and DDoS attacks, add the flowing line in In `/etc/nginx/nginx.conf`
     ``` 
-
+    client_body_buffer_size 4m;
+    large_client_header_buffers 4 4m;
+    limit_conn_zone $binary_remote_addr zone=conn_limit_per_ip:10m;
+    limit_req_zone $binary_remote_addr zone=req_limit_per_ip:10m rate=1r/s;
+    limit_conn conn_limit_per_ip 15;
+    limit_req zone=req_limit_per_ip burst=20;
+    ``` 
+    then check for errors and reload configuration
 ========= other steps in progress ==============
   
 # Useful tools:
