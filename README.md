@@ -30,6 +30,7 @@
     sudo service nginx reload
     ``` 
     * By now, the website is live: [aladinstuid.com](http://aladinstudio.com/)
+    * To remove server details being displayed in browsers, In `/etc/nginx/nginx.conf` uncomment the line `# server_tokens off;` 
 ========= other steps in progress ==============
   
 # Useful tools:
