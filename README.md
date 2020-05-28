@@ -1,3 +1,4 @@
+these notes are from the udemy course [secure vps](https://www.udemy.com/course/a-secure-vps-with-digitalocean-nginx-and-letsencrypt/)
 # Example Of installing a VPS with LEMP stack on [DigitlOcean](https://www.digitalocean.com/)
 1. Using DigitalOcean, Choose the LEMP image.
 1. Link the domain name to the VPS IP ADDRESS.
