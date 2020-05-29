@@ -25,7 +25,7 @@ these notes are from the udemy course [secure vps](https://www.udemy.com/course/
     ```
     sudo service nginx reload
     ``` 
-    * By now, the website is live: [aladinstuid.com](http://aladinstudio.com/)
+    * By now, the website is live: [aladinstudio.com](http://aladinstudio.com/)
     * To remove server details being displayed in browsers, In `/etc/nginx/nginx.conf` uncomment the line `# server_tokens off;` 
     * Avoiding XSS attacks, add the flowing line in In `/etc/nginx/nginx.conf`, after the line `gzip on;`  
     ```
@@ -49,12 +49,12 @@ these notes are from the udemy course [secure vps](https://www.udemy.com/course/
     limit_req zone=req_limit_per_ip burst=20;
     ``` 
     then check for errors and reload configuration
-    1. Secure mysql database:
+1. Secure mysql database:
     ```
     sudo mysql_secure_installation
     ```
     then basically yes for every question.
-    1. Install free SSL certificate for https:
+1. Install free SSL certificate for https:
     ```
     # Installing Certbot
     sudo add-apt-repository ppa:certbot/certbot
