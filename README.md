@@ -9,11 +9,6 @@ these notes are from the udemy course [secure vps](https://www.udemy.com/course/
     apt-get upgrade
     reboot #restart server
     ```
-1. Secure mysql database:
-    ```
-    sudo mysql_secure_installation
-    ```
-    then basically yes for every question.
 1. Configuring nginx
     * Check Configuration here `/etc/nginx`
     * Create a folder for your website here `/var/www`
@@ -54,9 +49,23 @@ these notes are from the udemy course [secure vps](https://www.udemy.com/course/
     limit_req zone=req_limit_per_ip burst=20;
     ``` 
     then check for errors and reload configuration
+    1. Secure mysql database:
+    ```
+    sudo mysql_secure_installation
+    ```
+    then basically yes for every question.
+    1. Install free SSL certificate for https:
+    ```
+    # Installing Certbot
+    sudo add-apt-repository ppa:certbot/certbot
+    sudo apt install python-certbot-nginx
+    # Obtaining an SSL Certificate
+    sudo certbot --nginx -d example.com -d www.example.com
+    ```
+    more detailed process [here](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04).
 ========= other steps in progress ==============
   
-# Useful tools:
+# Useful tools, commands and information:
 SSH Client: [link](http://www.putty.org/)  
 Filezilla: [link](https://filezilla-project.org/download.php?type=client)
 
