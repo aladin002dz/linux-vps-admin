@@ -63,7 +63,7 @@ these notes are from the udemy course [secure vps](https://www.udemy.com/course/
     sudo certbot --nginx -d example.com -d www.example.com
     ```
     more detailed process [here](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04).
-========= other steps in progress ==============
+1. For WordPress installation follow this [guide](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lemp-on-ubuntu-18-04).
   
 # Useful tools, commands and information:
 SSH Client: [link](http://www.putty.org/)  
